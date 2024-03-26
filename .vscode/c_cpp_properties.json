@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/share/sdcc/include/**"
+            ],
+            "defines": [
+                "INTERRUPT(name, vector)=void name(void)",
+                "INTERRUPT_USING(name, vector, regnum)=void name(void)",
+                "NOP()=(void)(0)",
+                "_nop_()=(void)(0)",
+                "__asm__(...)=",
+                "__naked=",
+                "__reentrant=",
+                "__bit=bool",
+                "__data=",
+                "__idata=",
+                "__pdata=",
+                "__xdata=",
+                "__bdata=",
+                "__code=",
+                "__interrupt="
+            ],
+            "compilerPath": "/usr/bin/sdcc",
+            "cStandard": "c17",
+            "compilerArgs": []
+        }
+    ],
+    "version": 4
+}
